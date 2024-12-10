@@ -1,12 +1,9 @@
 # firebase-download-tracking  
 **Documentação para tracking de downloads com Firebase**
 
----
 
 ## 📄 Objetivo
 Estudo para rastrear downloads no app utilizando o Firebase SDK.
-
----
 
 ## 📱 Instruções para Android
 1. Adicionar o Firebase ao projeto.
@@ -18,16 +15,19 @@ Estudo para rastrear downloads no app utilizando o Firebase SDK.
        putDouble("progress", 100.0)
    })
    ```
+
 ## 🍎 Instruções para iOS
 1.Adicionar o Firebase ao projeto no Xcode.
+
 2. Atualizar o Podfile.
+
 3. Rastrear eventos com:
   ```kotlin 
   Analytics.logEvent("file_download", parameters: [ 
     "file_name": "example_file.pdf", 
     "progress": 100.0 
 ])
-
+```
 
 ## 📊 Resultados Obtidos:
 1. Android: O evento foi registrado corretamente no Firebase Analytics e exibido nas métricas de eventos no console.
