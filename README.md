@@ -17,6 +17,7 @@ Estudo para rastrear downloads no app utilizando o Firebase SDK.
        putString("file_name", "example_file.pdf")
        putDouble("progress", 100.0)
    })
+   ```
 ## 🍎 Instruções para iOS
 1.Adicionar o Firebase ao projeto no Xcode.
 2. Atualizar o Podfile.
@@ -26,7 +27,9 @@ Estudo para rastrear downloads no app utilizando o Firebase SDK.
     "file_name": "example_file.pdf", 
     "progress": 100.0 
 ])
-## 📊 Resultados Obtidos
+
+
+## 📊 Resultados Obtidos:
 1. Android: O evento foi registrado corretamente no Firebase Analytics e exibido nas métricas de eventos no console.
 2. iOS: O evento foi rastreado corretamente no Firebase Analytics, e os dados foram enviados com sucesso para o painel de análise.
 ## 🔧 Funcionalidades Possíveis com o SDK do Firebase:
@@ -106,7 +109,7 @@ Passos principais:
 - No Firebase Console, vá até Analytics > Ações de conversão e configure eventos específicos que você deseja acompanhar como conversões (por exemplo, instalações ou compras).
 - No Google Ads, adicione essas conversões para ajustar suas campanhas com base no comportamento do usuário dentro do app.
 
-3.Monitorar as Conversões:
+3. Monitorar as Conversões:
 - Uma vez configurado, o Google Ads irá coletar dados sobre a eficácia de seus anúncios e como os usuários interagem com o app, incluindo o impacto das campanhas de instalação ou eventos personalizados.
   
 
