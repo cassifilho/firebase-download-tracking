@@ -8,6 +8,10 @@ Estudo para rastrear downloads no app utilizando o Firebase SDK.
 ## 📱 Instruções para Android
 1. Adicionar o [Firebase ao projeto.](https://firebase.google.com/docs/android/setup?hl=pt)
 2. Atualizar o Gradle.
+```kotlin
+./gradlew wrapper --gradle-version 8.2.1 --distribution-type all
+```
+
 3. Rastrear eventos com:
    ```kotlin
    FirebaseAnalytics.getInstance(this).logEvent("file_download", Bundle().apply {
@@ -15,9 +19,16 @@ Estudo para rastrear downloads no app utilizando o Firebase SDK.
        putDouble("progress", 100.0)
    })
    ```
+
 ## 🍎 Instruções para iOS 
 1.Adicionar o [Firebase ao projeto no Xcode.](https://firebase.google.com/docs/ios/setup?hl=pt-br)
+
 2. Atualizar o Podfile.
+
+```kotlin
+pod install --repo-update
+```
+
 3. Rastrear eventos com:
   ```kotlin 
   Analytics.logEvent("file_download", parameters: [ 
